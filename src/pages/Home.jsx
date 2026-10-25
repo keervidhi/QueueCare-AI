@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Clock,
@@ -18,9 +18,44 @@ import {
 import StatCard from '../components/common/StatCard';
 import DisclaimerBanner from '../components/common/DisclaimerBanner';
 import { useApp } from '../context/AppContext';
+import { apiClient } from '../services/api';
 
 export default function Home() {
   const { isDemoMode } = useApp();
+  const [metrics, setMetrics] = useState(null);
+  const [metricsError, setMetricsError] = useState('');
+
+  useEffect(() => {
+    let active = true;
+    const loadMetrics = async () => {
+      try {
+        const { data } = await apiClient.get('/metrics');
+        const best = data.models?.find((item) => item.model === data.best_model);
+        if (!best) throw new Error('Best model was not found in the metrics response');
+        if (active) {
+          setMetrics({ ...best, name: data.best_model, records: data.n_records });
+          setMetricsError('');
+        }
+      } catch (error) {
+        if (active) {
+          setMetrics(null);
+          setMetricsError('Unable to load trained model metrics from FastAPI.');
+        }
+        console.error('Model metrics request failed:', error);
+      }
+    };
+    loadMetrics();
+    const interval = setInterval(loadMetrics, 10000);
+    return () => {
+      active = false;
+      clearInterval(interval);
+    };
+  }, []);
+
+  const metricText = (value, digits = 3) =>
+    Number.isFinite(Number(value)) && value != null
+      ? Number(value).toFixed(digits)
+      : '—';
 
   const keyFeatures = [
     {
@@ -48,7 +83,7 @@ export default function Home() {
       icon: GitCompare,
       color: 'indigo',
       description:
-        'Compare regression architectures: Gradient Boosting (Reported MAE = 4.861 min, R² = 0.926) versus Random Forest, Decision Trees, and Linear Regression.',
+        'Compare trained regression models using the latest MAE, RMSE and R² metrics returned by FastAPI.',
       linkTo: '/analytics#models',
       linkText: 'Inspect Metrics',
       badge: 'Reported Metrics',
@@ -71,7 +106,7 @@ export default function Home() {
     {
       step: '03',
       title: 'Gradient Boosting Regression',
-      desc: 'The trained regression model infers expected delay with an experimental error of ±5.19 minutes RMSE.',
+      desc: 'The trained regression model estimates waiting time; its evaluation RMSE is loaded from the backend.',
       icon: BrainCircuit,
     },
     {
@@ -98,7 +133,7 @@ export default function Home() {
             {/* Pill Tag */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 border border-brand-200 text-xs font-semibold text-brand-800 shadow-soft-sm">
               <span className="w-2 h-2 rounded-full bg-brand-600 animate-pulse" />
-              <span>AIML Academic Mini Project &bull; Synthetic Dataset (1,200 Records)</span>
+              <span>AIML Academic Mini Project &bull; Synthetic Dataset ({metrics?.records?.toLocaleString() ?? '—'} Records)</span>
             </div>
 
             {/* Title & Headline */}
@@ -145,11 +180,11 @@ export default function Home() {
             <div className="pt-4 border-t border-slate-200/60 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-500">
               <div className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
-                <span>Gradient Boosting (MAE: 4.861 min)</span>
+                <span>{metrics ? `${metrics.name} (MAE: ${metricText(metrics.mae)} min)` : 'Model metrics unavailable'}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
-                <span>R² Score: 0.926 (Reported Benchmark)</span>
+                <span>R² Score: {metrics ? metricText(metrics.r2) : '—'} (Trained Model)</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
@@ -162,34 +197,37 @@ export default function Home() {
 
       {/* Experimental Stats Highlight */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {metricsError && (
+          <p role="alert" className="mb-4 text-sm text-red-600">{metricsError}</p>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <StatCard
             title="Synthetic Training Records"
-            value="1,200"
+            value={metrics?.records?.toLocaleString() ?? "—"}
             subtitle="Synthetic hospital patient arrivals & wait logs"
             icon={Users}
             colorScheme="blue"
             badge="Dataset"
           />
           <StatCard
-            title="Reported MAE (Best Model)"
-            value="4.861 m"
-            subtitle="Gradient Boosting Mean Absolute Error"
+            title="Trained Model MAE"
+            value={metrics ? `${metricText(metrics.mae)} min` : "—"}
+            subtitle={metrics ? `${metrics.name} Mean Absolute Error` : "Best model Mean Absolute Error"}
             icon={TrendingUp}
             colorScheme="teal"
             badge="Benchmark"
           />
           <StatCard
-            title="Reported RMSE"
-            value="6.162 m"
-            subtitle="Root Mean Squared Error variance"
+            title="Trained Model RMSE"
+            value={metrics ? `${metricText(metrics.rmse)} min` : "—"}
+            subtitle="Root Mean Squared Error"
             icon={Activity}
             colorScheme="indigo"
             badge="Accuracy"
           />
           <StatCard
             title="Model Fit (R² Score)"
-            value="0.926"
+            value={metrics ? metricText(metrics.r2) : "—"}
             subtitle="Variance explained across queue dynamics"
             icon={BrainCircuit}
             colorScheme="emerald"
@@ -265,7 +303,7 @@ export default function Home() {
               How QueueCare AI Predicts Waiting Time
             </h2>
             <p className="text-xs sm:text-sm text-slate-400">
-              From raw arrival variables to calibrated regression predictions in under 500 milliseconds.
+              From arrival and queue inputs to regression-based waiting-time estimates.
             </p>
           </div>
 

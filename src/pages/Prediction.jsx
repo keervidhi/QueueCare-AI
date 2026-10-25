@@ -29,7 +29,7 @@ export default function Prediction() {
   // Form State
   const initialForm = {
     department: 'General Medicine',
-    arrivalHour: 10,
+    arrivalHour: new Date().getHours(),
     queueLength: 4,
     staffAvailability: 4,
   };
@@ -40,7 +40,7 @@ export default function Prediction() {
   const [submitError, setSubmitError] = useState(null);
 
   // Validation function
-  const validate = () => {
+  const validate = (formToValidate = form) => {
     const newErrors = {};
 
     if (!form.department || form.department.trim() === '') {
@@ -78,9 +78,12 @@ export default function Prediction() {
   };
 
   const handleReset = () => {
-    setForm(initialForm);
-    setErrors({});
-    setSubmitError(null);
+  setForm({
+    ...initialForm,
+    arrivalHour: new Date().getHours(),
+  });
+  setErrors({});
+  setSubmitError(null);
   };
 
   const applyPreset = (preset) => {
@@ -89,24 +92,40 @@ export default function Prediction() {
     setSubmitError(null);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!validate()) return;
+  
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    setIsSubmitting(true);
-    setSubmitError(null);
+  // Get the current hour when Predict is clicked
+  const currentArrivalHour = new Date().getHours();
 
-    try {
-      const result = await submitPrediction(form, isDemoMode);
-      savePrediction(result);
-      // Navigate to Page 3: Prediction Results
-      navigate('/result');
-    } catch (err) {
-      setSubmitError(err.message || 'An error occurred while calculating prediction.');
-    } finally {
-      setIsSubmitting(false);
-    }
+  const updatedForm = {
+    ...form,
+    arrivalHour: currentArrivalHour,
   };
+
+  setForm(updatedForm);
+
+  if (!validate(updatedForm)) return;
+
+  setIsSubmitting(true);
+  setSubmitError(null);
+
+  try {
+    const result = await submitPrediction(updatedForm, isDemoMode);
+
+    savePrediction(result);
+    navigate('/result');
+
+  } catch (err) {
+    setSubmitError(
+      err.message || 'An error occurred while calculating prediction.'
+    );
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   const currentStaffTier = getStaffAvailabilityTier(form.staffAvailability);
 

@@ -23,13 +23,18 @@ export async function submitPrediction(input, isDemoMode = false) {
   const { department, arrivalHour, queueLength, staffAvailability } = input;
 
   // Sanitize values
-  const payload = {
+ /* const payload = {
     department: department.trim(),
     arrival_hour: Number(arrivalHour),
     queue_length: Number(queueLength),
     staff_availability: Number(staffAvailability),
+  };*/
+  const payload = {
+  department: department.trim(),
+  arrival_hour: Number(arrivalHour),
+  patients_ahead: Number(queueLength),
+  staff_available: Number(staffAvailability),
   };
-
   // If Demo Mode is explicitly enabled by the user
   if (isDemoMode) {
     // Simulate brief calculation processing time for natural UX
@@ -78,13 +83,17 @@ export async function submitPrediction(input, isDemoMode = false) {
       isDemo: false,
       source: 'LIVE_BACKEND_API',
       predictedWaitMinutes: Math.round(Number(waitTime) * 10) / 10,
-      confidenceRange: data.confidence_range || {
+      /*confidenceRange: data.confidence_range || {
         lower: Math.max(0, Math.round((Number(waitTime) - 5.19) * 10) / 10),
         upper: Math.round((Number(waitTime) + 5.19) * 10) / 10,
       },
       serviceRateMinutes: data.service_rate_minutes ?? null,
       peakHourFactor: data.peak_hour_factor ?? 'Standard',
-      modelUsed: data.model_used || 'Backend ML Model',
+      modelUsed: data.model_used || 'Backend ML Model',*/
+      confidenceRange: data.confidence_interval || null,
+      serviceRateMinutes: data.service_rate_minutes ?? null,
+      peakHourFactor: data.peak_hour_factor ?? 'Standard',
+      modelUsed: data.model || 'Backend ML Model',
       submittedInput: {
         department: payload.department,
         arrivalHour: payload.arrival_hour,
@@ -94,7 +103,7 @@ export async function submitPrediction(input, isDemoMode = false) {
       rawResponse: data,
       timestamp: new Date().toISOString(),
     };
-  } catch (error) {
+   /*catch (error) {
     // IMPORTANT: Per guidelines, never silently fall back to mock data when real API fails!
     console.error('Failed to communicate with live backend ML API:', error);
 
@@ -118,5 +127,41 @@ export async function submitPrediction(input, isDemoMode = false) {
     err.isBackendOffline = !error.response;
     err.originalError = error;
     throw err;
+  }*/
+ 
+} catch (error) {
+  console.error('Failed to communicate with live backend ML API:', error);
+
+  let errorMessage = 'Failed to obtain waiting-time prediction from the backend API.';
+
+  if (error.response) {
+    const detail = error.response.data?.detail;
+
+    const message = Array.isArray(detail)
+      ? detail.map(item =>
+          `${item.loc?.join('.')}: ${item.msg}`
+        ).join('; ')
+      : typeof detail === 'string'
+        ? detail
+        : error.response.data?.message || error.response.statusText;
+
+    errorMessage = `Backend error (${error.response.status}): ${message}`;
+
+  } else if (error.code === 'ECONNABORTED') {
+    errorMessage = 'Backend request timed out.';
+
+  } else if (error.request) {
+    errorMessage = 'Backend server is unreachable. Please check if FastAPI is running.';
+
+  } else {
+    errorMessage = error.message;
   }
+
+  const err = new Error(errorMessage);
+  err.isBackendOffline = !error.response;
+  err.originalError = error;
+
+  throw err;
+}
+
 }

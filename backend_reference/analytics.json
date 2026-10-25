@@ -1,0 +1,220 @@
+{
+  "by_hour": [
+    {
+      "arrival_hour": 0,
+      "avg_wait": 37.2
+    },
+    {
+      "arrival_hour": 1,
+      "avg_wait": 14.3
+    },
+    {
+      "arrival_hour": 2,
+      "avg_wait": 53.2
+    },
+    {
+      "arrival_hour": 3,
+      "avg_wait": 18.7
+    },
+    {
+      "arrival_hour": 4,
+      "avg_wait": 18.5
+    },
+    {
+      "arrival_hour": 5,
+      "avg_wait": 34.7
+    },
+    {
+      "arrival_hour": 6,
+      "avg_wait": 31.9
+    },
+    {
+      "arrival_hour": 7,
+      "avg_wait": 22.4
+    },
+    {
+      "arrival_hour": 8,
+      "avg_wait": 24.7
+    },
+    {
+      "arrival_hour": 9,
+      "avg_wait": 36.3
+    },
+    {
+      "arrival_hour": 10,
+      "avg_wait": 41.4
+    },
+    {
+      "arrival_hour": 11,
+      "avg_wait": 37.2
+    },
+    {
+      "arrival_hour": 12,
+      "avg_wait": 26.8
+    },
+    {
+      "arrival_hour": 13,
+      "avg_wait": 21.2
+    },
+    {
+      "arrival_hour": 14,
+      "avg_wait": 21.7
+    },
+    {
+      "arrival_hour": 15,
+      "avg_wait": 28.2
+    },
+    {
+      "arrival_hour": 16,
+      "avg_wait": 34.1
+    },
+    {
+      "arrival_hour": 17,
+      "avg_wait": 39.6
+    },
+    {
+      "arrival_hour": 18,
+      "avg_wait": 37.5
+    },
+    {
+      "arrival_hour": 19,
+      "avg_wait": 23.1
+    },
+    {
+      "arrival_hour": 20,
+      "avg_wait": 18.4
+    },
+    {
+      "arrival_hour": 21,
+      "avg_wait": 25.8
+    },
+    {
+      "arrival_hour": 22,
+      "avg_wait": 26.1
+    },
+    {
+      "arrival_hour": 23,
+      "avg_wait": 30.4
+    }
+  ],
+  "by_department": [
+    {
+      "department": "Cardiology",
+      "avg_wait": 53.8,
+      "avg_staff": 2.9,
+      "visits": 136
+    },
+    {
+      "department": "Dermatology",
+      "avg_wait": 31.4,
+      "avg_staff": 2.0,
+      "visits": 118
+    },
+    {
+      "department": "ENT",
+      "avg_wait": 30.9,
+      "avg_staff": 2.2,
+      "visits": 100
+    },
+    {
+      "department": "Emergency & Trauma",
+      "avg_wait": 22.1,
+      "avg_staff": 5.9,
+      "visits": 237
+    },
+    {
+      "department": "General Medicine",
+      "avg_wait": 20.5,
+      "avg_staff": 4.7,
+      "visits": 218
+    },
+    {
+      "department": "Orthopedics",
+      "avg_wait": 41.6,
+      "avg_staff": 2.9,
+      "visits": 133
+    },
+    {
+      "department": "Pediatrics",
+      "avg_wait": 25.7,
+      "avg_staff": 3.8,
+      "visits": 151
+    },
+    {
+      "department": "Radiology",
+      "avg_wait": 43.2,
+      "avg_staff": 3.2,
+      "visits": 107
+    }
+  ],
+  "queue_vs_wait": [
+    {
+      "patients_ahead": 0,
+      "avg_wait": 1.4
+    },
+    {
+      "patients_ahead": 1,
+      "avg_wait": 7.2
+    },
+    {
+      "patients_ahead": 2,
+      "avg_wait": 12.6
+    },
+    {
+      "patients_ahead": 3,
+      "avg_wait": 14.7
+    },
+    {
+      "patients_ahead": 4,
+      "avg_wait": 20.8
+    },
+    {
+      "patients_ahead": 5,
+      "avg_wait": 24.6
+    },
+    {
+      "patients_ahead": 6,
+      "avg_wait": 27.1
+    },
+    {
+      "patients_ahead": 7,
+      "avg_wait": 32.6
+    },
+    {
+      "patients_ahead": 8,
+      "avg_wait": 38.2
+    },
+    {
+      "patients_ahead": 9,
+      "avg_wait": 42.6
+    },
+    {
+      "patients_ahead": 10,
+      "avg_wait": 45.8
+    },
+    {
+      "patients_ahead": 11,
+      "avg_wait": 55.2
+    },
+    {
+      "patients_ahead": 12,
+      "avg_wait": 60.1
+    },
+    {
+      "patients_ahead": 13,
+      "avg_wait": 66.7
+    },
+    {
+      "patients_ahead": 14,
+      "avg_wait": 50.0
+    },
+    {
+      "patients_ahead": 15,
+      "avg_wait": 93.1
+    },
+    {
+      "patients_ahead": 16,
+      "avg_wait": 76.4
+    }
+  ]
+}

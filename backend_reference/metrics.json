@@ -1,0 +1,36 @@
+{
+  "best_model": "Gradient Boosting",
+  "n_records": 1200,
+  "n_train": 960,
+  "n_test": 240,
+  "models": [
+    {
+      "model": "Linear Regression",
+      "mae": 5.62,
+      "rmse": 7.339,
+      "r2": 0.896,
+      "cv_rmse": 7.167
+    },
+    {
+      "model": "Decision Tree",
+      "mae": 6.227,
+      "rmse": 7.919,
+      "r2": 0.878,
+      "cv_rmse": 9.139
+    },
+    {
+      "model": "Random Forest",
+      "mae": 5.403,
+      "rmse": 6.841,
+      "r2": 0.909,
+      "cv_rmse": 7.392
+    },
+    {
+      "model": "Gradient Boosting",
+      "mae": 4.861,
+      "rmse": 6.162,
+      "r2": 0.926,
+      "cv_rmse": 6.169
+    }
+  ]
+}

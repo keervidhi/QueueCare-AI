@@ -1,0 +1,1201 @@
+visit_id,department,arrival_hour,patients_ahead,staff_available,waiting_time_min
+V0001,Dermatology,15,8,5,24.9
+V0002,Cardiology,14,4,3,23.5
+V0003,ENT,18,13,1,77.2
+V0004,Pediatrics,16,9,2,36.1
+V0005,Emergency & Trauma,5,3,8,15.4
+V0006,Radiology,7,4,1,46.8
+V0007,Dermatology,15,7,4,25.4
+V0008,Dermatology,13,4,1,26.9
+V0009,Emergency & Trauma,10,7,4,36.3
+V0010,Cardiology,12,10,4,40.1
+V0011,General Medicine,17,8,6,23.3
+V0012,Radiology,18,7,3,33.7
+V0013,Pediatrics,15,7,2,34.3
+V0014,Dermatology,11,7,2,33.4
+V0015,Cardiology,10,8,6,20.1
+V0016,General Medicine,14,10,2,52.9
+V0017,Orthopedics,11,11,9,30.2
+V0018,Emergency & Trauma,15,5,6,18.0
+V0019,Dermatology,16,10,2,42.1
+V0020,Pediatrics,7,7,2,36.1
+V0021,Dermatology,0,6,1,48.9
+V0022,General Medicine,10,7,5,13.5
+V0023,Radiology,19,3,3,20.9
+V0024,ENT,16,7,2,21.8
+V0025,Dermatology,9,12,1,84.6
+V0026,General Medicine,19,6,5,18.7
+V0027,Cardiology,13,8,3,37.6
+V0028,Emergency & Trauma,13,5,5,13.3
+V0029,Emergency & Trauma,20,3,7,5.3
+V0030,Pediatrics,7,6,6,16.3
+V0031,Dermatology,10,6,2,22.8
+V0032,Radiology,15,9,1,110.2
+V0033,General Medicine,9,5,2,24.5
+V0034,General Medicine,16,1,3,11.3
+V0035,Cardiology,10,4,4,30.3
+V0036,General Medicine,8,7,5,15.8
+V0037,Emergency & Trauma,9,5,2,28.3
+V0038,Cardiology,12,10,1,108.4
+V0039,General Medicine,9,10,5,23.5
+V0040,Pediatrics,9,7,3,34.4
+V0041,Cardiology,18,9,1,105.6
+V0042,ENT,11,10,2,38.0
+V0043,Pediatrics,11,8,3,34.7
+V0044,General Medicine,7,4,5,9.6
+V0045,ENT,11,4,4,10.0
+V0046,Dermatology,10,9,1,71.1
+V0047,Cardiology,15,7,1,94.9
+V0048,General Medicine,9,8,6,17.7
+V0049,Pediatrics,19,3,2,19.1
+V0050,Emergency & Trauma,19,9,7,24.2
+V0051,General Medicine,8,4,5,11.7
+V0052,Emergency & Trauma,8,6,8,5.6
+V0053,Dermatology,8,3,1,20.4
+V0054,Pediatrics,15,7,6,15.5
+V0055,Pediatrics,9,4,2,35.2
+V0056,Dermatology,18,4,3,18.6
+V0057,Cardiology,17,8,1,102.7
+V0058,Orthopedics,18,6,2,42.2
+V0059,Emergency & Trauma,14,6,4,21.7
+V0060,Emergency & Trauma,23,6,5,10.0
+V0061,Pediatrics,7,2,3,11.9
+V0062,Cardiology,12,5,5,24.4
+V0063,Orthopedics,11,6,1,61.9
+V0064,Dermatology,20,3,3,16.1
+V0065,Pediatrics,15,5,3,12.9
+V0066,Orthopedics,17,8,1,87.3
+V0067,Orthopedics,9,11,2,64.3
+V0068,General Medicine,21,4,3,19.4
+V0069,Emergency & Trauma,13,2,3,11.1
+V0070,Cardiology,13,7,3,36.3
+V0071,General Medicine,21,4,7,3.8
+V0072,Cardiology,11,7,2,50.3
+V0073,ENT,12,7,1,47.7
+V0074,General Medicine,15,3,6,10.5
+V0075,Emergency & Trauma,9,9,3,28.9
+V0076,General Medicine,11,5,5,13.7
+V0077,General Medicine,9,7,7,12.0
+V0078,Pediatrics,8,12,5,15.7
+V0079,Orthopedics,18,8,6,35.0
+V0080,Dermatology,15,10,2,40.6
+V0081,Pediatrics,11,3,4,10.4
+V0082,Cardiology,12,9,5,30.4
+V0083,Dermatology,12,11,2,31.4
+V0084,Emergency & Trauma,16,8,10,15.6
+V0085,Emergency & Trauma,19,7,2,30.0
+V0086,Emergency & Trauma,20,7,7,17.8
+V0087,Pediatrics,11,8,5,24.1
+V0088,Cardiology,11,7,2,56.7
+V0089,Emergency & Trauma,13,3,6,10.2
+V0090,Orthopedics,15,8,1,75.2
+V0091,Emergency & Trauma,13,3,5,14.9
+V0092,Pediatrics,16,3,5,13.9
+V0093,Cardiology,14,16,8,40.7
+V0094,Cardiology,11,9,3,46.5
+V0095,General Medicine,11,8,4,21.7
+V0096,Pediatrics,11,13,6,23.6
+V0097,General Medicine,8,2,6,7.5
+V0098,Emergency & Trauma,9,3,7,15.9
+V0099,Emergency & Trauma,17,9,8,20.6
+V0100,Radiology,11,11,2,72.8
+V0101,ENT,10,7,3,26.9
+V0102,Pediatrics,15,4,3,24.7
+V0103,General Medicine,17,11,7,25.3
+V0104,Radiology,10,16,4,54.9
+V0105,Dermatology,18,8,1,41.4
+V0106,Pediatrics,19,2,3,9.7
+V0107,Cardiology,15,7,4,32.7
+V0108,General Medicine,16,5,4,25.0
+V0109,Emergency & Trauma,7,2,5,1.0
+V0110,ENT,20,6,1,35.2
+V0111,Cardiology,11,8,2,55.1
+V0112,General Medicine,19,3,3,5.5
+V0113,General Medicine,15,9,4,31.7
+V0114,Orthopedics,0,6,1,51.0
+V0115,Emergency & Trauma,6,11,3,51.4
+V0116,ENT,16,6,3,16.1
+V0117,Dermatology,15,7,1,41.5
+V0118,Pediatrics,5,3,4,7.6
+V0119,Cardiology,17,14,6,47.9
+V0120,Pediatrics,18,7,6,20.6
+V0121,Orthopedics,13,2,2,14.1
+V0122,Pediatrics,13,2,3,11.4
+V0123,Emergency & Trauma,1,4,8,16.7
+V0124,Cardiology,17,10,1,116.1
+V0125,Emergency & Trauma,11,6,6,20.6
+V0126,Orthopedics,18,6,1,61.1
+V0127,General Medicine,11,3,5,6.6
+V0128,Emergency & Trauma,15,4,10,17.9
+V0129,Emergency & Trauma,10,6,11,14.9
+V0130,Orthopedics,9,7,2,47.8
+V0131,Emergency & Trauma,17,6,10,14.4
+V0132,Radiology,13,8,7,15.0
+V0133,Orthopedics,14,5,2,38.6
+V0134,General Medicine,21,1,3,1.0
+V0135,Orthopedics,21,7,1,61.8
+V0136,Emergency & Trauma,18,10,4,30.1
+V0137,Radiology,9,6,2,32.7
+V0138,Cardiology,15,6,3,33.9
+V0139,Dermatology,18,5,4,25.0
+V0140,Emergency & Trauma,11,5,1,55.1
+V0141,Cardiology,8,5,1,65.1
+V0142,Orthopedics,18,9,3,45.6
+V0143,Radiology,13,3,5,6.3
+V0144,Orthopedics,15,6,3,29.3
+V0145,Cardiology,22,4,1,33.5
+V0146,General Medicine,15,6,6,18.3
+V0147,General Medicine,12,4,4,20.9
+V0148,Orthopedics,11,6,3,36.7
+V0149,Cardiology,12,11,1,134.4
+V0150,Emergency & Trauma,8,2,7,3.8
+V0151,Dermatology,17,2,3,16.9
+V0152,ENT,18,6,2,26.3
+V0153,Emergency & Trauma,10,6,12,15.8
+V0154,Orthopedics,10,12,5,35.7
+V0155,Emergency & Trauma,18,10,4,34.1
+V0156,Pediatrics,5,3,1,28.4
+V0157,General Medicine,14,4,5,10.6
+V0158,Pediatrics,13,4,4,15.6
+V0159,Pediatrics,16,4,3,21.1
+V0160,Dermatology,9,9,2,35.4
+V0161,Emergency & Trauma,16,10,3,49.7
+V0162,Radiology,11,9,1,90.3
+V0163,General Medicine,15,6,4,19.9
+V0164,Emergency & Trauma,6,3,2,10.6
+V0165,Orthopedics,13,6,3,24.6
+V0166,General Medicine,14,5,3,14.0
+V0167,Dermatology,10,5,6,12.1
+V0168,Dermatology,9,4,1,27.9
+V0169,General Medicine,9,7,8,20.5
+V0170,Radiology,11,10,5,34.0
+V0171,General Medicine,8,1,5,1.2
+V0172,Orthopedics,20,6,2,34.8
+V0173,General Medicine,12,6,5,23.1
+V0174,Radiology,18,8,3,49.0
+V0175,Emergency & Trauma,21,4,7,12.5
+V0176,Emergency & Trauma,8,6,10,15.6
+V0177,Cardiology,16,9,2,71.0
+V0178,Radiology,18,10,2,55.1
+V0179,ENT,16,6,1,38.9
+V0180,Dermatology,12,2,2,10.9
+V0181,ENT,12,7,1,47.9
+V0182,ENT,6,3,1,16.6
+V0183,Orthopedics,14,4,2,23.4
+V0184,General Medicine,23,1,5,6.7
+V0185,Dermatology,20,4,5,11.2
+V0186,Pediatrics,6,3,1,24.9
+V0187,General Medicine,16,8,5,26.1
+V0188,Emergency & Trauma,10,9,3,36.2
+V0189,Dermatology,19,5,3,25.1
+V0190,General Medicine,7,5,8,11.3
+V0191,Radiology,20,7,3,36.6
+V0192,General Medicine,18,9,6,11.3
+V0193,Emergency & Trauma,8,7,1,61.0
+V0194,ENT,7,8,2,40.1
+V0195,Emergency & Trauma,18,1,7,8.9
+V0196,Emergency & Trauma,9,7,2,42.4
+V0197,Orthopedics,14,3,1,27.6
+V0198,ENT,19,9,3,28.9
+V0199,General Medicine,15,2,2,7.4
+V0200,General Medicine,12,6,2,22.6
+V0201,Dermatology,12,3,1,18.9
+V0202,Radiology,7,7,2,44.3
+V0203,Orthopedics,21,5,2,28.3
+V0204,Emergency & Trauma,11,10,9,24.3
+V0205,Emergency & Trauma,9,8,11,19.1
+V0206,General Medicine,10,7,3,32.1
+V0207,Emergency & Trauma,21,2,3,10.3
+V0208,Pediatrics,8,2,6,5.7
+V0209,Emergency & Trauma,18,9,7,23.6
+V0210,Orthopedics,16,7,7,38.8
+V0211,Pediatrics,18,9,2,53.1
+V0212,Orthopedics,21,7,2,32.0
+V0213,General Medicine,18,6,6,16.7
+V0214,Dermatology,20,3,1,24.1
+V0215,Pediatrics,9,11,3,50.8
+V0216,Pediatrics,17,6,5,22.2
+V0217,Emergency & Trauma,14,2,5,7.9
+V0218,Emergency & Trauma,14,4,5,14.6
+V0219,Radiology,19,9,4,36.2
+V0220,Cardiology,21,5,1,64.3
+V0221,General Medicine,16,5,3,25.0
+V0222,Cardiology,13,6,5,15.8
+V0223,Pediatrics,13,3,7,12.4
+V0224,Radiology,11,6,2,58.3
+V0225,General Medicine,11,5,3,18.7
+V0226,Radiology,11,13,5,36.9
+V0227,Emergency & Trauma,8,8,5,20.2
+V0228,Orthopedics,8,6,4,21.8
+V0229,Pediatrics,17,6,3,21.4
+V0230,Emergency & Trauma,12,7,6,20.6
+V0231,Emergency & Trauma,20,4,5,13.7
+V0232,Cardiology,15,9,3,47.9
+V0233,Radiology,6,4,1,38.3
+V0234,Orthopedics,9,7,1,80.8
+V0235,Radiology,9,9,3,43.2
+V0236,Dermatology,21,5,1,33.0
+V0237,Cardiology,10,14,3,68.9
+V0238,Dermatology,14,3,1,20.1
+V0239,Emergency & Trauma,20,9,4,30.9
+V0240,Emergency & Trauma,21,6,8,11.7
+V0241,Dermatology,10,12,2,37.9
+V0242,Dermatology,7,4,4,17.2
+V0243,General Medicine,9,9,5,27.0
+V0244,Orthopedics,7,7,1,67.9
+V0245,Orthopedics,9,8,4,37.5
+V0246,ENT,15,3,2,21.1
+V0247,Orthopedics,19,5,1,60.0
+V0248,Cardiology,14,6,2,49.6
+V0249,General Medicine,16,7,4,26.9
+V0250,Cardiology,9,6,5,27.9
+V0251,Pediatrics,17,9,2,44.4
+V0252,ENT,15,6,3,15.3
+V0253,Cardiology,18,3,3,15.9
+V0254,General Medicine,20,2,6,6.8
+V0255,General Medicine,11,7,7,24.7
+V0256,Dermatology,8,3,1,13.1
+V0257,Dermatology,10,7,1,43.5
+V0258,Emergency & Trauma,12,9,5,31.8
+V0259,Emergency & Trauma,20,5,6,13.3
+V0260,Orthopedics,11,4,4,20.7
+V0261,Emergency & Trauma,17,8,1,75.0
+V0262,Dermatology,14,3,1,19.7
+V0263,General Medicine,9,6,5,19.5
+V0264,Emergency & Trauma,11,9,5,28.3
+V0265,Radiology,16,2,1,23.2
+V0266,Emergency & Trauma,16,3,5,9.5
+V0267,General Medicine,12,4,3,17.2
+V0268,Emergency & Trauma,10,10,3,40.3
+V0269,Emergency & Trauma,17,14,5,53.0
+V0270,Emergency & Trauma,9,7,8,14.1
+V0271,Emergency & Trauma,20,2,5,11.2
+V0272,Emergency & Trauma,9,7,6,20.7
+V0273,Emergency & Trauma,8,6,3,34.4
+V0274,Orthopedics,13,7,3,26.4
+V0275,Pediatrics,14,1,4,3.8
+V0276,Cardiology,14,3,1,33.6
+V0277,General Medicine,12,5,5,15.1
+V0278,Orthopedics,23,9,2,42.8
+V0279,ENT,13,7,3,24.8
+V0280,ENT,13,3,1,19.3
+V0281,Emergency & Trauma,12,8,8,19.3
+V0282,General Medicine,7,8,6,9.7
+V0283,General Medicine,15,5,6,15.7
+V0284,General Medicine,10,9,6,14.5
+V0285,Orthopedics,16,2,4,12.3
+V0286,Cardiology,7,4,2,26.9
+V0287,Emergency & Trauma,22,4,1,46.6
+V0288,General Medicine,13,3,9,8.8
+V0289,Orthopedics,19,6,4,16.9
+V0290,Emergency & Trauma,13,7,8,17.4
+V0291,ENT,7,8,1,66.4
+V0292,Emergency & Trauma,18,5,8,16.4
+V0293,Radiology,16,7,3,43.1
+V0294,Emergency & Trauma,17,5,5,28.8
+V0295,ENT,12,7,2,29.4
+V0296,ENT,16,5,2,27.9
+V0297,Radiology,18,11,4,39.5
+V0298,Dermatology,16,7,3,31.2
+V0299,Dermatology,11,6,1,50.2
+V0300,Pediatrics,16,5,1,52.0
+V0301,Dermatology,16,6,2,23.4
+V0302,Emergency & Trauma,20,3,6,13.7
+V0303,Orthopedics,11,6,2,37.1
+V0304,Orthopedics,12,11,3,52.7
+V0305,ENT,18,8,2,32.2
+V0306,Cardiology,14,9,2,66.9
+V0307,Cardiology,17,8,2,53.4
+V0308,Pediatrics,13,8,4,26.0
+V0309,General Medicine,10,8,4,29.9
+V0310,Emergency & Trauma,17,2,5,14.4
+V0311,Cardiology,9,7,6,28.6
+V0312,Cardiology,9,11,1,129.4
+V0313,General Medicine,16,11,5,25.4
+V0314,General Medicine,17,7,4,26.0
+V0315,General Medicine,19,5,8,14.4
+V0316,General Medicine,10,10,6,25.2
+V0317,General Medicine,8,4,4,13.1
+V0318,Pediatrics,20,5,1,54.5
+V0319,General Medicine,9,9,3,28.5
+V0320,Radiology,9,7,7,21.7
+V0321,Radiology,10,12,4,49.9
+V0322,Cardiology,14,6,4,22.1
+V0323,General Medicine,18,10,5,21.7
+V0324,Orthopedics,17,9,6,24.4
+V0325,ENT,16,1,1,11.9
+V0326,Pediatrics,9,15,1,122.6
+V0327,Dermatology,11,5,1,37.4
+V0328,Orthopedics,13,6,3,25.4
+V0329,Pediatrics,9,7,1,57.9
+V0330,General Medicine,10,9,5,25.2
+V0331,Pediatrics,10,9,5,23.8
+V0332,General Medicine,9,9,7,20.1
+V0333,Pediatrics,14,3,2,21.3
+V0334,ENT,16,11,4,42.2
+V0335,Emergency & Trauma,8,5,4,24.4
+V0336,Pediatrics,13,7,9,6.0
+V0337,Emergency & Trauma,17,8,4,28.4
+V0338,Pediatrics,17,7,2,35.4
+V0339,Emergency & Trauma,18,10,3,43.0
+V0340,Radiology,12,7,3,29.5
+V0341,Emergency & Trauma,18,4,5,9.5
+V0342,Radiology,10,16,3,71.1
+V0343,Dermatology,11,5,1,39.2
+V0344,Orthopedics,9,8,4,29.5
+V0345,Dermatology,13,5,1,24.9
+V0346,Dermatology,11,11,1,68.9
+V0347,Radiology,10,10,1,112.7
+V0348,General Medicine,17,11,6,26.9
+V0349,Orthopedics,11,6,3,30.9
+V0350,Emergency & Trauma,10,8,9,15.9
+V0351,Pediatrics,9,6,3,20.6
+V0352,Emergency & Trauma,12,2,9,4.4
+V0353,Orthopedics,10,12,1,122.5
+V0354,Orthopedics,11,10,1,117.3
+V0355,Cardiology,10,10,3,58.9
+V0356,Orthopedics,17,10,1,100.3
+V0357,Dermatology,20,5,2,19.8
+V0358,Dermatology,13,7,1,43.5
+V0359,Orthopedics,16,9,3,31.2
+V0360,Orthopedics,18,12,1,148.4
+V0361,Radiology,23,3,3,10.0
+V0362,Emergency & Trauma,15,5,7,11.4
+V0363,Emergency & Trauma,19,1,7,2.7
+V0364,Emergency & Trauma,19,6,7,9.5
+V0365,Pediatrics,17,2,4,12.7
+V0366,Cardiology,13,11,8,29.2
+V0367,Dermatology,8,10,1,59.8
+V0368,Pediatrics,3,3,5,7.8
+V0369,General Medicine,13,3,5,9.2
+V0370,ENT,13,4,2,18.8
+V0371,Dermatology,12,8,3,24.9
+V0372,General Medicine,15,10,5,20.8
+V0373,General Medicine,14,4,3,19.5
+V0374,General Medicine,18,8,2,49.2
+V0375,Emergency & Trauma,8,5,5,14.1
+V0376,Emergency & Trauma,10,9,12,21.9
+V0377,Radiology,17,6,1,76.3
+V0378,Cardiology,18,4,4,18.8
+V0379,Cardiology,23,8,1,88.5
+V0380,Pediatrics,18,8,5,25.7
+V0381,Orthopedics,19,5,6,18.1
+V0382,Radiology,11,7,3,21.2
+V0383,Dermatology,12,4,1,25.5
+V0384,Cardiology,10,10,3,47.1
+V0385,General Medicine,15,1,3,5.6
+V0386,Radiology,20,7,2,47.0
+V0387,Pediatrics,11,7,4,23.5
+V0388,Radiology,14,9,5,29.3
+V0389,Emergency & Trauma,10,8,4,18.4
+V0390,ENT,9,5,3,19.6
+V0391,Pediatrics,9,9,2,51.9
+V0392,Emergency & Trauma,7,5,3,20.7
+V0393,Orthopedics,20,15,3,64.1
+V0394,Pediatrics,12,6,10,16.7
+V0395,Emergency & Trauma,18,8,8,7.7
+V0396,Cardiology,16,8,8,16.4
+V0397,Dermatology,9,9,1,60.5
+V0398,General Medicine,9,5,5,18.9
+V0399,Cardiology,18,6,2,53.6
+V0400,Cardiology,10,8,4,39.2
+V0401,General Medicine,19,7,7,10.2
+V0402,Radiology,9,9,2,60.8
+V0403,Dermatology,16,5,5,17.9
+V0404,Emergency & Trauma,18,8,8,21.3
+V0405,Radiology,10,9,5,43.9
+V0406,ENT,10,5,2,23.1
+V0407,General Medicine,21,5,6,15.9
+V0408,ENT,10,8,1,57.4
+V0409,Emergency & Trauma,12,7,3,28.9
+V0410,Radiology,12,9,7,18.3
+V0411,Pediatrics,10,12,4,45.2
+V0412,Pediatrics,17,5,1,62.7
+V0413,Emergency & Trauma,17,10,2,58.5
+V0414,ENT,11,5,3,27.0
+V0415,Emergency & Trauma,18,5,6,20.8
+V0416,General Medicine,10,5,7,14.6
+V0417,Emergency & Trauma,0,6,3,21.1
+V0418,Dermatology,15,8,1,45.4
+V0419,General Medicine,23,7,6,6.6
+V0420,Radiology,6,9,1,93.2
+V0421,Pediatrics,9,10,2,52.9
+V0422,Emergency & Trauma,14,8,4,24.9
+V0423,Emergency & Trauma,18,4,12,5.5
+V0424,Emergency & Trauma,8,3,4,17.7
+V0425,Orthopedics,12,9,3,38.7
+V0426,Dermatology,17,1,1,16.4
+V0427,General Medicine,11,10,4,41.0
+V0428,ENT,9,8,3,42.9
+V0429,Emergency & Trauma,9,3,11,11.7
+V0430,Dermatology,12,7,3,17.8
+V0431,Radiology,13,6,2,37.5
+V0432,Dermatology,18,1,2,14.3
+V0433,Pediatrics,16,5,6,15.9
+V0434,ENT,16,6,2,31.7
+V0435,Emergency & Trauma,22,6,3,23.9
+V0436,General Medicine,12,3,4,7.8
+V0437,Emergency & Trauma,12,4,8,6.2
+V0438,Orthopedics,19,5,3,21.6
+V0439,Dermatology,10,6,5,8.0
+V0440,Pediatrics,17,5,3,20.3
+V0441,ENT,17,5,1,55.6
+V0442,Emergency & Trauma,8,2,3,9.7
+V0443,Pediatrics,13,0,1,2.0
+V0444,General Medicine,9,9,5,27.8
+V0445,General Medicine,9,5,11,20.4
+V0446,Pediatrics,13,3,2,15.8
+V0447,Radiology,10,10,4,32.7
+V0448,Pediatrics,17,14,3,54.8
+V0449,Emergency & Trauma,19,10,12,18.8
+V0450,Pediatrics,17,7,2,37.2
+V0451,Emergency & Trauma,10,11,5,39.1
+V0452,ENT,10,6,1,44.2
+V0453,Pediatrics,10,8,3,41.4
+V0454,Emergency & Trauma,9,6,6,19.5
+V0455,Emergency & Trauma,20,5,8,9.4
+V0456,General Medicine,12,7,4,15.8
+V0457,Radiology,10,6,3,29.7
+V0458,Cardiology,18,5,3,28.4
+V0459,Dermatology,12,6,1,47.3
+V0460,Pediatrics,6,4,5,6.3
+V0461,Orthopedics,9,10,3,51.5
+V0462,Emergency & Trauma,16,5,12,10.7
+V0463,Radiology,17,6,4,20.2
+V0464,General Medicine,10,7,8,26.3
+V0465,Orthopedics,19,8,2,50.4
+V0466,Pediatrics,18,4,3,16.8
+V0467,Pediatrics,18,7,4,30.5
+V0468,Radiology,10,13,3,50.0
+V0469,Emergency & Trauma,7,9,5,23.9
+V0470,Orthopedics,18,5,3,28.9
+V0471,Cardiology,10,11,4,48.1
+V0472,Cardiology,15,3,5,14.8
+V0473,Emergency & Trauma,17,13,6,19.7
+V0474,Emergency & Trauma,9,8,5,11.6
+V0475,General Medicine,17,8,5,18.0
+V0476,General Medicine,20,3,5,2.4
+V0477,Cardiology,17,13,5,47.5
+V0478,Pediatrics,12,4,6,15.6
+V0479,Pediatrics,18,6,2,32.2
+V0480,Cardiology,14,4,1,46.4
+V0481,Cardiology,17,11,2,79.4
+V0482,General Medicine,18,4,3,14.3
+V0483,Orthopedics,17,6,4,26.1
+V0484,General Medicine,10,9,3,35.5
+V0485,Emergency & Trauma,8,10,5,36.7
+V0486,Cardiology,10,9,8,29.1
+V0487,Cardiology,14,6,4,20.4
+V0488,General Medicine,14,2,5,12.6
+V0489,Orthopedics,15,7,3,23.7
+V0490,Orthopedics,12,7,3,29.5
+V0491,Pediatrics,17,7,3,22.4
+V0492,Pediatrics,19,1,7,1.0
+V0493,Pediatrics,10,11,1,84.0
+V0494,General Medicine,17,9,7,21.6
+V0495,Dermatology,16,4,2,13.1
+V0496,Orthopedics,14,9,5,21.8
+V0497,Cardiology,9,6,1,70.0
+V0498,Pediatrics,17,8,3,29.7
+V0499,General Medicine,20,3,2,5.0
+V0500,Orthopedics,17,9,4,40.4
+V0501,Pediatrics,19,5,8,6.5
+V0502,ENT,22,0,1,1.0
+V0503,Radiology,11,13,1,148.8
+V0504,Orthopedics,16,8,4,22.6
+V0505,Orthopedics,13,4,3,14.8
+V0506,Dermatology,22,8,2,28.1
+V0507,General Medicine,8,3,1,31.0
+V0508,ENT,12,3,1,18.7
+V0509,Orthopedics,18,4,2,25.0
+V0510,Emergency & Trauma,10,8,4,43.5
+V0511,Emergency & Trauma,17,11,2,47.1
+V0512,ENT,11,13,1,75.6
+V0513,Emergency & Trauma,21,3,3,10.4
+V0514,General Medicine,18,8,3,30.5
+V0515,General Medicine,10,9,1,80.2
+V0516,Emergency & Trauma,17,3,5,10.4
+V0517,General Medicine,11,6,2,30.1
+V0518,Dermatology,15,6,3,23.5
+V0519,Emergency & Trauma,16,5,7,13.2
+V0520,Dermatology,18,4,1,40.5
+V0521,ENT,5,4,1,23.6
+V0522,General Medicine,10,2,3,15.5
+V0523,Emergency & Trauma,16,6,6,19.2
+V0524,Orthopedics,15,4,5,6.7
+V0525,Emergency & Trauma,13,6,7,14.7
+V0526,General Medicine,7,3,5,7.4
+V0527,Radiology,11,10,1,96.6
+V0528,Radiology,18,6,2,43.0
+V0529,Dermatology,6,4,1,24.4
+V0530,General Medicine,12,5,4,16.6
+V0531,Pediatrics,20,2,6,9.3
+V0532,Pediatrics,7,3,4,16.2
+V0533,Cardiology,17,8,2,59.8
+V0534,Pediatrics,10,7,7,10.0
+V0535,Emergency & Trauma,18,6,6,15.8
+V0536,General Medicine,17,4,8,8.9
+V0537,Orthopedics,19,5,4,17.3
+V0538,Emergency & Trauma,10,10,5,24.6
+V0539,Emergency & Trauma,14,9,3,32.4
+V0540,ENT,17,5,1,38.2
+V0541,Radiology,10,5,3,31.6
+V0542,Orthopedics,10,3,3,22.7
+V0543,ENT,5,3,1,37.1
+V0544,Radiology,20,6,4,26.3
+V0545,Emergency & Trauma,16,6,6,19.7
+V0546,Cardiology,16,7,1,88.7
+V0547,Cardiology,17,12,1,137.5
+V0548,Emergency & Trauma,14,4,9,7.9
+V0549,Dermatology,13,5,2,19.0
+V0550,Cardiology,12,1,3,10.1
+V0551,Cardiology,16,13,2,93.8
+V0552,Emergency & Trauma,9,8,7,23.4
+V0553,General Medicine,19,6,6,6.8
+V0554,ENT,18,7,5,15.4
+V0555,Emergency & Trauma,11,6,7,22.1
+V0556,General Medicine,15,6,8,7.3
+V0557,General Medicine,9,10,6,23.9
+V0558,Orthopedics,21,5,2,28.5
+V0559,Orthopedics,19,5,5,18.5
+V0560,Orthopedics,19,6,4,21.0
+V0561,Emergency & Trauma,11,5,5,18.3
+V0562,General Medicine,9,4,7,9.2
+V0563,ENT,10,6,1,44.7
+V0564,Pediatrics,8,5,3,30.1
+V0565,Pediatrics,9,9,2,43.6
+V0566,Pediatrics,8,6,3,18.2
+V0567,Dermatology,22,7,1,35.6
+V0568,Emergency & Trauma,8,4,7,12.4
+V0569,General Medicine,9,9,4,32.1
+V0570,Orthopedics,18,12,4,38.9
+V0571,General Medicine,15,5,5,17.1
+V0572,ENT,17,9,3,32.1
+V0573,Cardiology,16,9,2,50.4
+V0574,Dermatology,18,10,1,72.5
+V0575,ENT,16,11,2,36.2
+V0576,Orthopedics,14,6,6,11.4
+V0577,ENT,17,8,2,23.5
+V0578,Orthopedics,12,4,1,34.7
+V0579,ENT,11,9,6,11.6
+V0580,General Medicine,13,3,7,9.7
+V0581,Orthopedics,9,11,2,61.3
+V0582,Orthopedics,17,12,5,33.6
+V0583,Emergency & Trauma,10,8,9,20.5
+V0584,Cardiology,9,7,2,51.2
+V0585,Radiology,10,9,5,31.4
+V0586,Pediatrics,18,6,4,18.9
+V0587,Emergency & Trauma,11,7,5,21.1
+V0588,General Medicine,16,7,3,21.1
+V0589,General Medicine,18,7,7,22.0
+V0590,Emergency & Trauma,8,6,1,49.1
+V0591,Radiology,17,10,7,23.3
+V0592,Cardiology,10,8,2,40.8
+V0593,General Medicine,10,8,5,18.2
+V0594,Orthopedics,16,9,3,46.3
+V0595,Emergency & Trauma,19,12,10,9.6
+V0596,General Medicine,10,12,4,35.7
+V0597,Pediatrics,15,6,5,15.6
+V0598,Pediatrics,10,12,6,27.2
+V0599,Radiology,14,5,4,25.1
+V0600,Pediatrics,15,10,5,30.5
+V0601,Cardiology,15,6,3,28.4
+V0602,Dermatology,16,9,1,72.0
+V0603,ENT,9,12,2,55.0
+V0604,Pediatrics,16,8,5,17.6
+V0605,Radiology,16,9,3,33.7
+V0606,Dermatology,16,9,1,53.3
+V0607,ENT,8,3,1,21.3
+V0608,Emergency & Trauma,12,4,6,15.4
+V0609,Pediatrics,12,4,5,17.4
+V0610,Cardiology,8,4,2,28.9
+V0611,Orthopedics,10,8,1,78.9
+V0612,Pediatrics,12,3,4,16.0
+V0613,Radiology,17,5,4,38.3
+V0614,Radiology,10,7,6,28.4
+V0615,General Medicine,18,9,2,53.3
+V0616,Pediatrics,14,6,3,19.2
+V0617,Dermatology,17,5,1,38.9
+V0618,General Medicine,13,3,7,11.2
+V0619,Emergency & Trauma,13,12,2,57.8
+V0620,Emergency & Trauma,15,3,3,16.3
+V0621,Dermatology,19,5,5,18.8
+V0622,Cardiology,13,5,2,42.3
+V0623,Radiology,14,3,1,31.3
+V0624,Cardiology,15,4,6,18.6
+V0625,Radiology,17,6,3,32.0
+V0626,Cardiology,8,6,2,34.3
+V0627,Dermatology,14,8,1,44.6
+V0628,Emergency & Trauma,13,3,10,10.1
+V0629,Orthopedics,19,4,2,30.0
+V0630,Dermatology,13,6,1,35.2
+V0631,Radiology,13,3,4,11.2
+V0632,Dermatology,21,2,1,14.0
+V0633,Emergency & Trauma,12,8,2,58.9
+V0634,General Medicine,9,11,1,91.6
+V0635,Emergency & Trauma,10,8,4,28.1
+V0636,Emergency & Trauma,8,7,4,26.4
+V0637,Pediatrics,0,5,1,30.5
+V0638,Pediatrics,12,6,6,13.3
+V0639,Dermatology,17,11,1,60.3
+V0640,ENT,17,10,4,20.6
+V0641,Pediatrics,6,4,3,13.8
+V0642,Dermatology,15,5,2,25.1
+V0643,Emergency & Trauma,9,2,5,14.2
+V0644,General Medicine,20,4,7,8.3
+V0645,Pediatrics,9,9,4,26.1
+V0646,ENT,16,8,3,27.5
+V0647,Emergency & Trauma,11,9,6,18.8
+V0648,Orthopedics,16,8,4,28.6
+V0649,Pediatrics,12,5,3,8.8
+V0650,Emergency & Trauma,17,9,3,49.1
+V0651,Cardiology,10,15,3,76.5
+V0652,ENT,19,7,2,34.2
+V0653,Pediatrics,13,3,1,35.4
+V0654,General Medicine,17,5,3,26.1
+V0655,ENT,18,4,2,19.1
+V0656,General Medicine,23,5,6,20.4
+V0657,ENT,10,10,2,40.9
+V0658,General Medicine,10,6,5,22.1
+V0659,Orthopedics,10,9,1,86.6
+V0660,Cardiology,10,15,1,183.8
+V0661,General Medicine,15,0,3,1.1
+V0662,ENT,23,7,1,54.7
+V0663,General Medicine,22,3,4,13.7
+V0664,Emergency & Trauma,14,7,12,5.0
+V0665,General Medicine,16,14,4,42.3
+V0666,Pediatrics,18,8,3,28.0
+V0667,Dermatology,20,3,2,20.4
+V0668,Radiology,9,4,3,29.8
+V0669,General Medicine,14,2,7,8.2
+V0670,Cardiology,18,8,5,27.7
+V0671,Emergency & Trauma,10,8,5,25.1
+V0672,Orthopedics,12,9,2,45.3
+V0673,Radiology,22,5,1,50.4
+V0674,Pediatrics,22,5,4,14.9
+V0675,Orthopedics,19,4,1,36.3
+V0676,Cardiology,17,12,3,80.5
+V0677,Radiology,10,9,2,59.8
+V0678,Orthopedics,11,8,3,39.4
+V0679,Emergency & Trauma,14,5,9,10.5
+V0680,General Medicine,15,2,4,7.7
+V0681,Emergency & Trauma,14,5,3,15.7
+V0682,General Medicine,16,7,7,13.4
+V0683,Emergency & Trauma,12,3,3,12.8
+V0684,Cardiology,17,8,5,30.0
+V0685,Pediatrics,11,5,7,23.3
+V0686,General Medicine,11,10,10,21.2
+V0687,Cardiology,9,3,2,22.4
+V0688,Radiology,9,7,1,71.9
+V0689,Dermatology,18,7,1,37.5
+V0690,Orthopedics,12,9,4,25.9
+V0691,General Medicine,10,11,6,17.9
+V0692,ENT,17,6,1,44.5
+V0693,General Medicine,14,3,6,9.3
+V0694,General Medicine,4,2,5,1.0
+V0695,ENT,11,7,4,16.1
+V0696,Orthopedics,9,2,1,17.5
+V0697,Dermatology,16,8,3,24.7
+V0698,Orthopedics,10,4,2,30.4
+V0699,Pediatrics,7,7,6,16.2
+V0700,General Medicine,7,3,2,12.3
+V0701,General Medicine,15,6,1,45.0
+V0702,General Medicine,5,5,6,5.6
+V0703,Emergency & Trauma,18,7,4,35.5
+V0704,ENT,9,4,4,20.9
+V0705,General Medicine,15,5,2,29.7
+V0706,Orthopedics,12,8,3,32.9
+V0707,Dermatology,12,2,1,12.3
+V0708,Dermatology,8,4,3,9.9
+V0709,Cardiology,17,5,4,28.8
+V0710,Cardiology,19,7,1,85.5
+V0711,Radiology,2,5,1,55.3
+V0712,Pediatrics,9,11,5,35.9
+V0713,Dermatology,19,5,3,24.6
+V0714,ENT,14,8,2,31.6
+V0715,Dermatology,9,7,3,27.9
+V0716,General Medicine,9,12,2,56.3
+V0717,Orthopedics,16,8,2,40.4
+V0718,Emergency & Trauma,17,11,5,30.6
+V0719,Pediatrics,15,3,5,8.1
+V0720,Radiology,20,5,5,19.3
+V0721,Orthopedics,13,8,3,36.6
+V0722,Cardiology,10,7,1,81.1
+V0723,Emergency & Trauma,13,6,9,6.1
+V0724,Radiology,11,7,4,33.3
+V0725,Emergency & Trauma,10,8,5,26.3
+V0726,Emergency & Trauma,7,1,7,8.6
+V0727,General Medicine,11,5,3,23.7
+V0728,Emergency & Trauma,16,9,4,28.0
+V0729,Cardiology,4,5,4,30.4
+V0730,Orthopedics,12,3,1,38.8
+V0731,General Medicine,16,9,4,28.3
+V0732,Emergency & Trauma,15,6,6,11.0
+V0733,Emergency & Trauma,17,8,10,7.8
+V0734,Cardiology,18,12,2,87.5
+V0735,Emergency & Trauma,16,9,3,37.3
+V0736,Pediatrics,8,7,6,18.9
+V0737,General Medicine,13,4,6,17.3
+V0738,General Medicine,15,5,4,18.0
+V0739,Cardiology,10,9,1,122.1
+V0740,Cardiology,7,7,5,25.4
+V0741,Emergency & Trauma,10,10,6,31.5
+V0742,Emergency & Trauma,13,4,3,15.3
+V0743,ENT,12,5,6,8.6
+V0744,Emergency & Trauma,9,4,8,13.7
+V0745,Orthopedics,18,5,1,50.3
+V0746,Cardiology,19,10,6,26.5
+V0747,General Medicine,9,4,7,7.3
+V0748,Cardiology,19,2,5,14.0
+V0749,Dermatology,4,6,2,24.0
+V0750,ENT,19,4,1,27.2
+V0751,General Medicine,20,3,8,12.2
+V0752,General Medicine,2,1,2,4.1
+V0753,General Medicine,17,8,3,28.8
+V0754,Cardiology,21,4,1,51.7
+V0755,Pediatrics,19,6,2,28.5
+V0756,General Medicine,21,0,3,2.1
+V0757,General Medicine,14,7,8,17.6
+V0758,Radiology,8,8,2,48.6
+V0759,Emergency & Trauma,18,8,3,42.1
+V0760,Cardiology,15,5,2,35.4
+V0761,Pediatrics,15,7,6,5.1
+V0762,Emergency & Trauma,12,10,10,22.1
+V0763,Emergency & Trauma,15,4,6,8.9
+V0764,Emergency & Trauma,9,9,6,22.5
+V0765,Radiology,17,3,10,10.2
+V0766,Emergency & Trauma,8,3,6,12.6
+V0767,General Medicine,17,9,2,43.4
+V0768,Emergency & Trauma,18,8,5,27.5
+V0769,Emergency & Trauma,13,3,5,8.1
+V0770,Pediatrics,14,5,7,15.8
+V0771,General Medicine,11,8,5,16.5
+V0772,Orthopedics,21,4,1,44.8
+V0773,Orthopedics,17,8,2,57.5
+V0774,ENT,11,5,4,15.1
+V0775,Emergency & Trauma,9,10,6,26.6
+V0776,ENT,10,7,2,22.7
+V0777,Pediatrics,13,5,2,38.4
+V0778,Emergency & Trauma,20,4,9,9.2
+V0779,Dermatology,17,7,2,26.8
+V0780,ENT,10,5,3,21.4
+V0781,General Medicine,18,9,8,18.5
+V0782,Radiology,11,10,2,66.4
+V0783,Cardiology,18,9,1,87.3
+V0784,Orthopedics,10,12,2,61.3
+V0785,Radiology,15,4,4,21.5
+V0786,General Medicine,19,4,7,9.2
+V0787,Dermatology,10,13,1,101.8
+V0788,General Medicine,16,6,3,29.4
+V0789,Dermatology,22,2,1,27.1
+V0790,Orthopedics,9,6,4,23.4
+V0791,General Medicine,8,5,4,13.0
+V0792,Cardiology,16,16,3,88.3
+V0793,General Medicine,11,8,6,24.3
+V0794,Emergency & Trauma,8,8,6,22.1
+V0795,Emergency & Trauma,13,6,5,13.4
+V0796,General Medicine,17,2,8,12.4
+V0797,Emergency & Trauma,10,10,5,27.8
+V0798,Emergency & Trauma,11,8,6,21.2
+V0799,Pediatrics,18,8,5,24.0
+V0800,Pediatrics,14,3,4,9.2
+V0801,Pediatrics,18,12,5,29.2
+V0802,General Medicine,12,5,4,19.9
+V0803,ENT,20,8,4,23.3
+V0804,Orthopedics,16,9,2,58.2
+V0805,Emergency & Trauma,8,11,10,16.5
+V0806,Emergency & Trauma,19,11,4,48.5
+V0807,Pediatrics,13,4,5,25.5
+V0808,Emergency & Trauma,9,14,10,16.2
+V0809,Orthopedics,9,14,5,40.0
+V0810,Radiology,16,3,6,8.8
+V0811,Emergency & Trauma,7,6,5,25.3
+V0812,Emergency & Trauma,10,3,5,18.7
+V0813,Radiology,9,10,4,40.6
+V0814,Orthopedics,12,4,3,20.3
+V0815,Emergency & Trauma,12,12,10,23.9
+V0816,ENT,14,3,6,3.2
+V0817,ENT,10,13,3,42.9
+V0818,Orthopedics,6,4,5,7.7
+V0819,Pediatrics,15,9,3,31.8
+V0820,General Medicine,11,6,4,26.3
+V0821,Emergency & Trauma,16,8,2,54.4
+V0822,Orthopedics,8,5,4,24.7
+V0823,General Medicine,3,0,5,1.0
+V0824,Pediatrics,10,16,5,31.3
+V0825,ENT,13,6,1,41.4
+V0826,Emergency & Trauma,12,8,3,29.1
+V0827,Orthopedics,18,11,2,68.2
+V0828,General Medicine,11,2,6,11.0
+V0829,ENT,14,1,3,5.5
+V0830,General Medicine,15,5,4,14.6
+V0831,Pediatrics,5,8,2,32.6
+V0832,Orthopedics,14,4,3,20.1
+V0833,Cardiology,11,9,5,33.9
+V0834,Pediatrics,12,2,2,4.5
+V0835,Pediatrics,8,7,2,38.0
+V0836,Orthopedics,17,9,2,49.4
+V0837,Dermatology,20,7,2,26.7
+V0838,Radiology,5,8,1,78.1
+V0839,Cardiology,15,2,1,24.9
+V0840,Orthopedics,17,10,2,49.9
+V0841,Emergency & Trauma,10,15,9,32.1
+V0842,Dermatology,17,9,1,63.2
+V0843,Orthopedics,16,13,1,119.2
+V0844,Cardiology,19,6,6,18.8
+V0845,Emergency & Trauma,22,5,3,25.9
+V0846,ENT,7,7,6,13.6
+V0847,Cardiology,12,13,2,86.5
+V0848,Pediatrics,14,5,8,12.9
+V0849,Emergency & Trauma,9,11,8,14.4
+V0850,Radiology,11,8,1,83.0
+V0851,Emergency & Trauma,22,4,4,16.5
+V0852,General Medicine,3,8,4,26.1
+V0853,ENT,13,4,1,26.3
+V0854,Radiology,18,7,2,50.1
+V0855,General Medicine,11,8,5,11.6
+V0856,Cardiology,13,12,5,39.9
+V0857,Pediatrics,21,5,1,41.8
+V0858,ENT,13,4,1,29.6
+V0859,General Medicine,9,14,5,33.2
+V0860,Orthopedics,7,4,1,38.8
+V0861,Dermatology,20,1,1,1.7
+V0862,Pediatrics,10,10,6,27.3
+V0863,Dermatology,14,2,1,16.8
+V0864,Orthopedics,8,3,2,13.0
+V0865,Emergency & Trauma,12,7,4,23.9
+V0866,ENT,20,0,2,1.0
+V0867,ENT,14,5,1,33.4
+V0868,Dermatology,21,6,1,37.6
+V0869,Emergency & Trauma,10,4,5,18.9
+V0870,General Medicine,14,3,3,20.6
+V0871,Dermatology,18,7,3,24.3
+V0872,Emergency & Trauma,12,4,6,8.7
+V0873,Radiology,10,8,2,50.6
+V0874,General Medicine,18,3,11,13.9
+V0875,Pediatrics,11,11,3,39.3
+V0876,ENT,14,3,2,9.0
+V0877,Cardiology,21,7,3,28.5
+V0878,General Medicine,9,12,2,58.9
+V0879,Orthopedics,10,11,8,26.9
+V0880,Orthopedics,6,6,1,58.8
+V0881,Cardiology,11,10,2,65.6
+V0882,Orthopedics,9,12,1,120.5
+V0883,Radiology,16,8,1,75.5
+V0884,Cardiology,9,9,2,65.6
+V0885,General Medicine,16,6,4,14.5
+V0886,General Medicine,10,9,3,25.1
+V0887,Cardiology,11,7,2,53.2
+V0888,Emergency & Trauma,11,9,3,33.8
+V0889,Emergency & Trauma,17,7,10,27.3
+V0890,Pediatrics,13,4,5,11.9
+V0891,General Medicine,11,7,7,12.0
+V0892,Radiology,18,8,1,88.1
+V0893,General Medicine,15,5,1,39.5
+V0894,Emergency & Trauma,10,4,11,18.6
+V0895,Dermatology,19,4,3,25.4
+V0896,ENT,11,5,2,19.9
+V0897,General Medicine,6,6,2,20.4
+V0898,General Medicine,13,4,3,18.2
+V0899,General Medicine,9,2,2,12.5
+V0900,Orthopedics,10,10,3,47.8
+V0901,Cardiology,17,14,5,51.5
+V0902,General Medicine,9,7,7,18.5
+V0903,Emergency & Trauma,17,8,6,24.6
+V0904,Cardiology,20,1,3,10.2
+V0905,Radiology,15,8,4,39.5
+V0906,Pediatrics,16,10,3,27.6
+V0907,Orthopedics,17,8,1,79.7
+V0908,Emergency & Trauma,23,6,2,26.2
+V0909,General Medicine,11,7,6,23.7
+V0910,General Medicine,9,9,5,17.0
+V0911,Dermatology,14,4,4,12.1
+V0912,ENT,14,4,1,31.0
+V0913,ENT,9,7,4,18.4
+V0914,Radiology,15,5,7,16.6
+V0915,Radiology,3,6,2,39.7
+V0916,Radiology,19,4,3,25.1
+V0917,Emergency & Trauma,10,5,3,22.6
+V0918,Emergency & Trauma,6,4,2,32.3
+V0919,General Medicine,8,6,4,14.6
+V0920,Orthopedics,10,10,2,62.6
+V0921,Emergency & Trauma,10,9,12,23.7
+V0922,ENT,6,3,1,17.0
+V0923,Pediatrics,10,7,4,25.3
+V0924,Orthopedics,9,9,3,41.3
+V0925,Emergency & Trauma,11,3,8,5.1
+V0926,General Medicine,11,12,7,25.0
+V0927,Emergency & Trauma,11,8,4,34.8
+V0928,ENT,11,3,4,16.6
+V0929,Orthopedics,8,6,3,25.2
+V0930,Pediatrics,5,8,1,80.0
+V0931,General Medicine,9,7,5,24.7
+V0932,General Medicine,17,7,6,12.2
+V0933,Cardiology,22,2,4,12.4
+V0934,Dermatology,19,6,2,32.8
+V0935,Dermatology,14,6,2,34.0
+V0936,General Medicine,14,4,7,10.6
+V0937,Radiology,11,9,4,26.2
+V0938,Emergency & Trauma,17,5,6,17.7
+V0939,ENT,17,5,1,40.0
+V0940,Emergency & Trauma,18,9,1,90.7
+V0941,General Medicine,19,6,1,44.2
+V0942,ENT,12,5,3,22.2
+V0943,Emergency & Trauma,17,9,7,29.7
+V0944,Cardiology,17,5,3,22.6
+V0945,Cardiology,10,9,5,34.7
+V0946,General Medicine,19,3,12,11.1
+V0947,Pediatrics,8,4,5,10.5
+V0948,ENT,23,11,1,76.4
+V0949,ENT,17,5,1,33.7
+V0950,General Medicine,8,4,1,30.7
+V0951,Orthopedics,16,5,2,25.9
+V0952,General Medicine,6,2,2,14.6
+V0953,General Medicine,17,10,4,21.3
+V0954,Emergency & Trauma,17,8,4,34.6
+V0955,Radiology,15,7,3,33.8
+V0956,ENT,18,4,2,18.7
+V0957,Dermatology,8,4,1,17.6
+V0958,Orthopedics,10,10,5,35.5
+V0959,Orthopedics,12,5,5,8.3
+V0960,Orthopedics,7,7,1,62.2
+V0961,Orthopedics,12,1,6,7.1
+V0962,Cardiology,10,12,2,92.4
+V0963,Emergency & Trauma,11,6,5,23.9
+V0964,Emergency & Trauma,12,6,4,29.4
+V0965,Radiology,18,6,2,36.2
+V0966,Cardiology,10,9,3,45.8
+V0967,Radiology,19,5,10,2.4
+V0968,Emergency & Trauma,12,6,5,27.0
+V0969,Orthopedics,11,8,1,88.4
+V0970,General Medicine,14,4,7,9.2
+V0971,General Medicine,12,4,5,11.9
+V0972,Emergency & Trauma,10,8,4,33.7
+V0973,Emergency & Trauma,14,6,9,14.6
+V0974,Radiology,9,10,5,43.9
+V0975,General Medicine,11,5,7,16.0
+V0976,Orthopedics,15,4,4,10.0
+V0977,Cardiology,12,6,5,22.4
+V0978,Cardiology,18,16,2,107.9
+V0979,Orthopedics,10,8,4,29.2
+V0980,General Medicine,21,3,3,1.0
+V0981,Radiology,17,7,1,78.9
+V0982,Dermatology,21,4,1,28.5
+V0983,Dermatology,18,8,2,21.2
+V0984,Cardiology,9,4,2,28.6
+V0985,Emergency & Trauma,14,4,6,13.2
+V0986,Radiology,9,4,1,56.6
+V0987,General Medicine,18,9,4,34.4
+V0988,Emergency & Trauma,15,3,7,9.0
+V0989,General Medicine,10,7,2,34.6
+V0990,Dermatology,19,1,4,7.6
+V0991,Pediatrics,8,9,5,26.2
+V0992,Dermatology,15,4,1,18.3
+V0993,Dermatology,17,11,2,42.5
+V0994,General Medicine,7,5,4,13.9
+V0995,Radiology,15,3,3,23.0
+V0996,Cardiology,18,5,3,36.4
+V0997,Pediatrics,7,5,5,13.6
+V0998,Emergency & Trauma,14,9,6,16.9
+V0999,Radiology,10,11,2,74.8
+V1000,General Medicine,16,7,2,33.9
+V1001,Emergency & Trauma,8,4,9,8.0
+V1002,Cardiology,20,5,9,11.1
+V1003,Emergency & Trauma,19,4,5,12.0
+V1004,Emergency & Trauma,9,11,3,45.9
+V1005,Pediatrics,11,7,4,27.3
+V1006,Cardiology,15,8,1,104.3
+V1007,Radiology,17,6,3,36.0
+V1008,General Medicine,12,4,4,12.9
+V1009,Pediatrics,9,8,4,24.0
+V1010,Cardiology,8,9,2,64.4
+V1011,Pediatrics,23,6,5,11.8
+V1012,Orthopedics,13,7,4,32.8
+V1013,Cardiology,18,8,2,58.3
+V1014,Radiology,13,2,2,18.8
+V1015,General Medicine,19,6,5,19.9
+V1016,Emergency & Trauma,8,6,4,16.8
+V1017,Pediatrics,8,4,2,24.3
+V1018,ENT,19,5,3,14.8
+V1019,Emergency & Trauma,20,3,5,12.1
+V1020,Cardiology,11,11,3,52.5
+V1021,ENT,11,4,1,30.3
+V1022,Dermatology,13,6,2,26.7
+V1023,Radiology,12,9,3,35.6
+V1024,Orthopedics,9,4,2,31.8
+V1025,Pediatrics,19,4,6,12.9
+V1026,General Medicine,10,8,3,37.1
+V1027,Radiology,16,6,7,20.8
+V1028,General Medicine,7,3,5,7.7
+V1029,Pediatrics,6,4,3,16.4
+V1030,Cardiology,16,7,3,40.6
+V1031,Orthopedics,11,7,6,25.0
+V1032,Pediatrics,16,6,6,14.5
+V1033,Orthopedics,8,6,2,42.4
+V1034,ENT,20,2,5,10.1
+V1035,Cardiology,17,10,3,67.0
+V1036,Pediatrics,18,6,3,24.8
+V1037,General Medicine,9,8,4,23.9
+V1038,Cardiology,11,15,2,79.8
+V1039,Cardiology,11,6,2,38.6
+V1040,Emergency & Trauma,14,7,1,70.1
+V1041,Emergency & Trauma,10,2,7,24.6
+V1042,Pediatrics,7,2,2,14.5
+V1043,Pediatrics,11,13,3,43.0
+V1044,Pediatrics,10,8,6,20.5
+V1045,Emergency & Trauma,11,6,5,25.0
+V1046,General Medicine,9,6,3,31.0
+V1047,General Medicine,10,7,7,20.5
+V1048,Dermatology,16,7,3,20.5
+V1049,ENT,11,8,4,28.6
+V1050,General Medicine,11,5,6,11.8
+V1051,Pediatrics,14,5,5,18.5
+V1052,Emergency & Trauma,17,6,10,24.8
+V1053,General Medicine,11,6,6,14.5
+V1054,Emergency & Trauma,15,5,3,24.3
+V1055,General Medicine,21,6,2,34.4
+V1056,Pediatrics,14,6,5,10.2
+V1057,Radiology,19,5,3,31.4
+V1058,General Medicine,17,5,3,17.8
+V1059,Orthopedics,7,2,4,12.6
+V1060,Pediatrics,12,6,9,11.8
+V1061,Radiology,16,11,3,48.1
+V1062,Pediatrics,22,2,1,18.3
+V1063,General Medicine,13,3,7,9.4
+V1064,Pediatrics,8,9,2,48.8
+V1065,General Medicine,15,9,2,44.8
+V1066,Radiology,9,13,3,45.0
+V1067,Cardiology,17,9,2,71.8
+V1068,Pediatrics,14,8,6,15.8
+V1069,Emergency & Trauma,17,10,6,26.4
+V1070,Cardiology,18,8,1,100.2
+V1071,ENT,16,8,1,53.7
+V1072,Pediatrics,15,10,6,17.6
+V1073,Cardiology,17,7,3,36.6
+V1074,Radiology,18,7,2,40.9
+V1075,ENT,18,6,3,28.9
+V1076,General Medicine,6,6,2,36.9
+V1077,Orthopedics,14,2,5,9.1
+V1078,Cardiology,10,11,1,133.7
+V1079,Pediatrics,18,12,9,16.2
+V1080,General Medicine,16,8,1,73.5
+V1081,General Medicine,12,6,9,9.5
+V1082,Radiology,9,13,4,45.9
+V1083,Radiology,11,4,2,34.6
+V1084,ENT,16,11,1,85.3
+V1085,Radiology,9,7,5,32.1
+V1086,Dermatology,8,5,2,22.5
+V1087,Dermatology,19,6,1,44.1
+V1088,Dermatology,17,6,1,48.6
+V1089,Cardiology,9,7,5,24.0
+V1090,Cardiology,10,14,4,50.1
+V1091,General Medicine,21,5,3,26.6
+V1092,Pediatrics,16,7,4,29.9
+V1093,General Medicine,15,7,4,22.7
+V1094,General Medicine,10,12,3,46.3
+V1095,Orthopedics,10,16,1,140.5
+V1096,Cardiology,6,7,1,88.9
+V1097,General Medicine,17,6,2,38.9
+V1098,Dermatology,7,2,3,7.9
+V1099,ENT,0,6,1,34.6
+V1100,Emergency & Trauma,17,6,8,12.3
+V1101,Emergency & Trauma,20,3,7,5.7
+V1102,General Medicine,17,12,3,39.3
+V1103,Dermatology,13,3,1,18.3
+V1104,ENT,13,7,3,32.3
+V1105,Emergency & Trauma,12,6,7,17.6
+V1106,Dermatology,11,4,2,18.2
+V1107,Emergency & Trauma,14,6,5,26.7
+V1108,Cardiology,12,9,2,60.0
+V1109,Radiology,15,3,1,23.4
+V1110,General Medicine,19,3,5,15.3
+V1111,Emergency & Trauma,23,3,6,11.1
+V1112,Cardiology,8,7,4,24.5
+V1113,Pediatrics,11,5,3,34.9
+V1114,Radiology,9,3,4,19.1
+V1115,Radiology,11,13,2,77.0
+V1116,Emergency & Trauma,10,6,9,14.0
+V1117,Emergency & Trauma,9,7,11,13.8
+V1118,Dermatology,17,8,1,53.4
+V1119,General Medicine,13,5,7,18.5
+V1120,ENT,19,8,1,59.1
+V1121,Pediatrics,6,3,1,34.3
+V1122,Emergency & Trauma,7,3,10,12.2
+V1123,ENT,12,8,2,45.6
+V1124,Emergency & Trauma,8,2,10,17.2
+V1125,Cardiology,10,8,1,87.2
+V1126,Orthopedics,22,2,1,22.4
+V1127,Orthopedics,10,7,8,15.9
+V1128,Pediatrics,9,6,3,19.4
+V1129,Pediatrics,15,4,6,15.8
+V1130,Radiology,13,5,6,20.7
+V1131,Radiology,15,6,6,22.0
+V1132,Orthopedics,11,7,3,27.0
+V1133,Emergency & Trauma,18,6,8,12.7
+V1134,Pediatrics,9,7,3,34.1
+V1135,Radiology,12,8,5,30.6
+V1136,General Medicine,16,3,6,4.6
+V1137,Cardiology,18,6,2,41.4
+V1138,Cardiology,11,10,2,66.5
+V1139,Emergency & Trauma,15,4,3,15.7
+V1140,Pediatrics,8,9,1,82.7
+V1141,General Medicine,9,9,6,25.4
+V1142,Dermatology,8,6,4,6.4
+V1143,ENT,17,6,1,51.4
+V1144,Dermatology,10,10,2,50.2
+V1145,Cardiology,17,5,1,61.1
+V1146,General Medicine,7,2,3,19.3
+V1147,Dermatology,18,7,2,29.3
+V1148,Dermatology,18,10,1,70.3
+V1149,Orthopedics,8,7,2,47.4
+V1150,ENT,5,4,1,38.4
+V1151,Emergency & Trauma,7,6,7,19.5
+V1152,ENT,18,8,2,31.2
+V1153,Emergency & Trauma,10,9,3,40.4
+V1154,Emergency & Trauma,14,2,1,32.2
+V1155,Orthopedics,12,3,6,5.7
+V1156,Emergency & Trauma,17,9,6,38.4
+V1157,Emergency & Trauma,13,5,4,24.7
+V1158,Emergency & Trauma,13,7,8,9.0
+V1159,Cardiology,22,4,2,33.0
+V1160,Dermatology,9,14,1,104.2
+V1161,Emergency & Trauma,18,5,8,10.2
+V1162,Pediatrics,7,3,1,19.4
+V1163,Dermatology,13,2,3,1.0
+V1164,Emergency & Trauma,19,3,7,9.3
+V1165,Emergency & Trauma,16,8,9,19.7
+V1166,ENT,16,8,2,29.5
+V1167,Dermatology,10,11,2,50.6
+V1168,Orthopedics,12,10,6,30.2
+V1169,Dermatology,11,8,4,25.1
+V1170,Emergency & Trauma,14,6,4,10.4
+V1171,Cardiology,13,6,3,38.1
+V1172,Pediatrics,11,5,3,28.3
+V1173,General Medicine,10,3,6,8.6
+V1174,Dermatology,10,4,2,19.8
+V1175,Orthopedics,11,11,1,100.6
+V1176,Dermatology,9,3,4,13.6
+V1177,Cardiology,18,7,3,36.0
+V1178,General Medicine,15,7,1,62.3
+V1179,General Medicine,9,14,5,38.6
+V1180,General Medicine,16,3,6,6.7
+V1181,Dermatology,18,14,3,36.4
+V1182,Emergency & Trauma,10,7,8,18.0
+V1183,Emergency & Trauma,9,9,9,22.9
+V1184,Emergency & Trauma,1,5,6,11.9
+V1185,Emergency & Trauma,7,4,8,8.6
+V1186,Dermatology,17,5,4,14.8
+V1187,Cardiology,22,4,1,58.3
+V1188,Radiology,7,7,4,27.4
+V1189,Emergency & Trauma,17,9,7,17.1
+V1190,Pediatrics,8,1,4,11.4
+V1191,Cardiology,15,12,1,150.7
+V1192,Cardiology,17,9,2,57.8
+V1193,ENT,11,5,1,40.0
+V1194,Radiology,2,9,1,100.1
+V1195,ENT,15,4,2,27.8
+V1196,General Medicine,22,5,5,7.8
+V1197,General Medicine,10,8,7,18.9
+V1198,Pediatrics,9,14,2,62.5
+V1199,General Medicine,9,3,7,14.9
+V1200,Pediatrics,14,5,3,17.3

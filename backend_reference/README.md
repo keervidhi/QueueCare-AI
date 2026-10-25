@@ -1,61 +1,45 @@
-# QueueCare AI — Backend ML API Reference
+# QueueCare AI — Backend Reference
 
-This directory contains the Python FastAPI companion server implementation matching the QueueCare AI frontend contract.
+Synthetic dataset, ML training pipeline and FastAPI server for the QueueCare AI frontend.
 
-## API Endpoints
+> Academic prototype. Data is synthetic; predictions are not for clinical use.
 
-| Endpoint | Method | Description |
-| :--- | :--- | :--- |
-| `/api/health` | `GET` | Health check and backend model status |
-| `/api/predict` | `POST` | Generates waiting-time prediction from inputs |
-| `/api/analytics/hourly` | `GET` | 24-hour waiting time distribution |
-| `/api/analytics/departments` | `GET` | Specialty department waiting times & staffing |
-| `/api/analytics/models` | `GET` | Reported model evaluation benchmarks |
+## Setup
 
-## Request Body for `/api/predict`
+```bash
+cd backend_reference
+python -m venv venv && source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt
 
-```json
-{
-  "department": "Emergency",
-  "arrival_hour": 10,
-  "queue_length": 5,
-  "staff_availability": 4
-}
+python generate_dataset.py    # -> hospital_queue_data.csv (1,200 records)
+python train_model.py         # -> model.joblib, metrics.json, analytics.json
+uvicorn app:app --reload --port 8000
 ```
 
-## Response Schema for `/api/predict`
+Then set the frontend to Live mode (`VITE_API_BASE_URL=http://localhost:8000/api`).
 
-```json
-{
-  "predicted_wait_time": 28.5,
-  "predicted_wait_minutes": 28.5,
-  "confidence_range": {
-    "lower": 23.3,
-    "upper": 33.7
-  },
-  "service_rate_minutes": 6.0,
-  "peak_hour_factor": "High Traffic Peak",
-  "model_used": "Gradient Boosting Regressor",
-  "department": "Emergency"
-}
-```
+## Dataset
 
-## Running the Reference Backend
+| Column | Description |
+|---|---|
+| visit_id | Record id |
+| department | One of 8 departments |
+| arrival_hour | 0-23 |
+| patients_ahead | Queue length at arrival |
+| staff_available | Clinical staff on duty |
+| waiting_time_min | Target (minutes) |
 
-1. Create and activate a Python virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+Waiting time = (service time x patients ahead / staff^0.85) + peak-hour surge
++ department overhead + noise. Peaks at 09-11 and 16-18.
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Models compared
 
-3. Launch the server:
-   ```bash
-   uvicorn app:app --reload --port 8000
-   ```
+Linear Regression, Decision Tree, Random Forest, Gradient Boosting (80/20 split,
+plus 5-fold CV). Engineered features: `load_per_staff`, `is_peak`.
 
-4. The server runs at `http://localhost:8000`. The frontend communicates with it via the `VITE_API_BASE_URL` defined in `.env`.
+## API
+
+- `GET  /api/health`
+- `POST /api/predict` body: `{department, arrival_hour, patients_ahead, staff_available}`
+- `GET  /api/metrics`
+- `GET  /api/analytics`

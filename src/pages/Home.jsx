@@ -48,7 +48,7 @@ export default function Home() {
       icon: GitCompare,
       color: 'indigo',
       description:
-        'Compare regression architectures: Gradient Boosting (Reported MAE = 4.137 min, R² = 0.708) versus Random Forest, Decision Trees, and Linear Regression.',
+        'Compare regression architectures: Gradient Boosting (Reported MAE = 4.861 min, R² = 0.926) versus Random Forest, Decision Trees, and Linear Regression.',
       linkTo: '/analytics#models',
       linkText: 'Inspect Metrics',
       badge: 'Reported Metrics',
@@ -145,11 +145,11 @@ export default function Home() {
             <div className="pt-4 border-t border-slate-200/60 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-500">
               <div className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
-                <span>Gradient Boosting (MAE: 4.137 min)</span>
+                <span>Gradient Boosting (MAE: 4.861 min)</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
-                <span>R² Score: 0.708 (Reported Benchmark)</span>
+                <span>R² Score: 0.926 (Reported Benchmark)</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
@@ -173,7 +173,7 @@ export default function Home() {
           />
           <StatCard
             title="Reported MAE (Best Model)"
-            value="4.137 m"
+            value="4.861 m"
             subtitle="Gradient Boosting Mean Absolute Error"
             icon={TrendingUp}
             colorScheme="teal"
@@ -181,7 +181,7 @@ export default function Home() {
           />
           <StatCard
             title="Reported RMSE"
-            value="5.190 m"
+            value="6.162 m"
             subtitle="Root Mean Squared Error variance"
             icon={Activity}
             colorScheme="indigo"
@@ -189,7 +189,7 @@ export default function Home() {
           />
           <StatCard
             title="Model Fit (R² Score)"
-            value="0.708"
+            value="0.926"
             subtitle="Variance explained across queue dynamics"
             icon={BrainCircuit}
             colorScheme="emerald"

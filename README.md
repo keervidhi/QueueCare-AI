@@ -58,8 +58,8 @@ An AIML academic mini project frontend providing real-time hospital outpatient t
 
 ## 📂 Project Structure
 
-```
 QueueCare AI/
+│
 ├── index.html
 ├── vite.config.js
 ├── tailwind.config.js
@@ -68,38 +68,54 @@ QueueCare AI/
 ├── .env.example
 ├── .env
 ├── README.md
-├── backend_reference/               # Reference FastAPI companion server
-│   ├── app.py                       # REST API implementation
-│   ├── requirements.txt             # Python ML dependencies
-│   └── README.md                    # Backend setup instructions
-└── src/
-    ├── index.css                    # Tailwind imports & custom styles
-    ├── main.jsx                     # Application bootstrap & router
-    ├── App.jsx                      # Route definitions
+│
+├── backend_reference/                  # FastAPI Backend & ML Model
+│   │
+│   ├── app.py                          # REST API implementation
+│   ├── requirements.txt                # Python ML dependencies
+│   ├── README.md                       # Backend setup instructions
+│   ├── hospital_queue_data.csv         # Hospital queue dataset
+│   ├── generate_dataset.py             # Synthetic dataset generation
+│   ├── train_model.py                  # ML model training
+│   ├── predictor.py                    # Waiting-time prediction logic
+│   ├── model.joblib                     # Trained ML model
+│   ├── metrics.json                     # Model evaluation metrics
+│   └── analytics.json                   # Analytics data
+│
+└── src/                                # React Frontend
+    │
+    ├── index.css                       # Tailwind imports & custom styles
+    ├── main.jsx                        # Application bootstrap & router
+    ├── App.jsx                         # Route definitions
+    │
     ├── context/
-    │   └── AppContext.jsx           # State for predictions & Demo/Live mode
+    │   └── AppContext.jsx              # Global state & Demo/Live mode
+    │
     ├── components/
     │   └── common/
-    │       ├── Navbar.jsx           # Navigation & mode toggle
-    │       ├── Footer.jsx           # Disclaimer & project information
-    │       ├── StatCard.jsx         # KPI summary metric cards
-    │       ├── ChartCard.jsx        # Responsive container for Recharts
-    │       ├── LoadingState.jsx     # Pulse loading indicators
-    │       ├── ErrorMessage.jsx     # Graceful error alerts & retry
-    │       └── DisclaimerBanner.jsx # Academic prototype disclaimer banner
+    │       ├── Navbar.jsx              # Navigation & mode toggle
+    │       ├── Footer.jsx              # Footer & project information
+    │       ├── StatCard.jsx            # KPI summary cards
+    │       ├── ChartCard.jsx           # Recharts chart container
+    │       ├── LoadingState.jsx        # Loading indicators
+    │       ├── ErrorMessage.jsx        # Error handling & retry
+    │       └── DisclaimerBanner.jsx    # Academic prototype disclaimer
+    │
     ├── pages/
-    │   ├── Home.jsx                 # Landing page & feature cards
-    │   ├── Prediction.jsx           # Waiting-time prediction form
-    │   ├── PredictionResult.jsx     # Prediction result card & breakdown
-    │   ├── Analytics.jsx            # Flow charts & model benchmarks
-    │   └── NotFound.jsx             # 404 handler
+    │   ├── Home.jsx                    # Landing page
+    │   ├── Prediction.jsx              # Waiting-time prediction form
+    │   ├── PredictionResult.jsx        # Prediction results
+    │   ├── Analytics.jsx               # Analytics dashboard
+    │   └── NotFound.jsx                # 404 error page
+    │
     ├── services/
-    │   ├── api.js                   # Centralized Axios client & health check
-    │   ├── predictionService.js     # ML inference service
-    │   ├── analyticsService.js      # Patient flow & benchmark metrics
-    │   └── mockData.js              # 1,200 synthetic records distribution
+    │   ├── api.js                      # Axios API client
+    │   ├── predictionService.js        # ML prediction API integration
+    │   ├── analyticsService.js         # Analytics API integration
+    │   └── mockData.js                 # Synthetic demo data
+    │
     └── utils/
-        └── formatters.js            # Time, severity, and staffing helpers
+        └── formatters.js               # Formatting helper functions
 ```
 
 ---
@@ -111,35 +127,89 @@ QueueCare AI/
 - [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
 - `npm` or `pnpm`
 
+## Backend Installation and Setup
+
+The backend of QueueCare AI is developed using **FastAPI (Python)** and integrates a trained Machine Learning model for hospital waiting-time prediction.
+
 ### Installation
 
-1. Clone or navigate to the repository:
+1. Navigate to the backend directory:
+
    ```bash
    cd "QueueCare AI"
+   cd backend_reference
    ```
 
-2. Install dependencies:
+2. Create a Python virtual environment:
+
    ```bash
-   npm install
+   python -m venv venv
    ```
 
-3. Launch development server:
+3. Activate the virtual environment:
+
+   **Windows (CMD):**
    ```bash
-   npm run dev
+   venv\Scripts\activate
    ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-4. Build for production:
+   **Windows (PowerShell):**
+   ```powershell
+   .\venv\Scripts\Activate.ps1
+   ```
+
+4. Install backend dependencies:
+
    ```bash
-   npm run build
+   python -m pip install -r requirements.txt
    ```
 
-5. Preview production build locally:
+5. Generate the hospital queue dataset (optional, if the dataset already exists):
+
    ```bash
-   npm run preview
+   python generate_dataset.py
    ```
 
----
+6. Train the Machine Learning model (optional, if `model.joblib` already exists):
+
+   ```bash
+   python train_model.py
+   ```
+
+7. Launch the FastAPI backend server:
+
+   ```bash
+   python -m uvicorn app:app --reload --host 127.0.0.1 --port 8000
+   ```
+
+8. Open the backend API in your browser:
+
+   - **Backend API:** http://localhost:8000
+   - **Swagger API Documentation:** http://localhost:8000/docs
+   - **ReDoc Documentation:** http://localhost:8000/redoc
+
+### Running Frontend and Backend Together
+
+**Terminal 1 – Backend:**
+
+```bash
+cd "QueueCare AI"
+cd backend_reference
+venv\Scripts\activate
+python -m uvicorn app:app --reload --port 8000
+```
+
+**Terminal 2 – Frontend:**
+
+```bash
+cd "QueueCare AI"
+npm install
+npm run dev
+```
+
+Open the frontend at http://localhost:3000 (if configured in `vite.config.js`).
+
+**Note:** Keep both terminals running for the frontend to communicate with the backend API. Ensure the frontend API base URL points to `http://localhost:8000`.
 
 ## ⚙️ Backend Integration & Demo Mode
 

@@ -57,7 +57,7 @@ An AIML academic mini project frontend providing real-time hospital outpatient t
 ---
 
 ## 📂 Project Structure
-
+```text
 QueueCare AI/
 │
 ├── index.html
